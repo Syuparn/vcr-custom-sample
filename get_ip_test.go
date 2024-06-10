@@ -27,7 +27,7 @@ func runRecorder(cassette string, hooks []func(*cassette.Interaction) error) (*r
 	return r, err
 }
 
-func TestCustomizeResponse(t *testing.T) {
+func TestShowIPAddress(t *testing.T) {
 	hooks := []func(*cassette.Interaction) error{
 		patchGetIPResponse,
 	}
